@@ -1,0 +1,19 @@
+//Faça uma função capaz de receber dois números a e b, onde o primeiro sempre é menor
+//que o segundo, e calcula a soma dos números pares compreendidos entre os dois números
+//lidos.
+#include <stdio.h>
+
+int soma_pares(int a, int b) {
+    int soma = 0;
+    for (int i = a + 1; i < b; i++) {
+        if (i % 2 == 0) soma += i;
+    }
+    return soma;
+}
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d\n", soma_pares(a, b));
+    return 0;
+}
