@@ -1,0 +1,15 @@
+// crie uma função capaz de receber 1 número n qualquer e imprimir todos os números de 1 a n.
+#include <stdio.h>
+
+void imprimir_ate_n(int n) {
+    for (int i = 1; i <= n; i++) {
+        printf("%d\n", i);
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    imprimir_ate_n(n);
+    return 0;
+}
