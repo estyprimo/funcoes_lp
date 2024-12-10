@@ -1,7 +1,7 @@
 //crie uma função capaz de receber 3 números a, b e c, e retornar o delta desses números
 #include <stdio.h>
 
-double calcularDelta(double a, b, c) {
+double calcularDelta(double a, double b, double c) {
     return (b * b) - (4 * a * c);
 }
 
