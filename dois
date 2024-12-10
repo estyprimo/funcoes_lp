@@ -1,0 +1,21 @@
+// crie uma funçao capaz de receber 2 números x e y, e retornar qual dos dois é maior
+
+#include <stdio.h>
+
+double maior(int x, int y) {
+    if (x > y) {
+        return x;
+    } else {
+        return y;
+    }
+}
+
+int main() {
+    double x, y;
+    scanf("%d %d", &x, &y);
+
+    int resultado = maior(x, y);
+    printf("%d\n", resultado);
+
+    return 0;
+}
