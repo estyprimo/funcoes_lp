@@ -1,0 +1,15 @@
+// crie uma função capaz de determinar a soma dos n primeiros termos de uma P.A. 
+//a soma dos n primeiros termos de uma P.A. é definida pela fórmula a seguir: Sn = n∗(a1+an)/2. 
+//é necessário receber o primeiro elemento, o n-ésimo elemento e o valor de n.
+#include <stdio.h>
+
+double soma_pa(int a1, int an, int n) {
+    return n * (a1 + an) / 2.0;
+}
+
+int main() {
+    int a1, an, n;
+    scanf("%d %d %d", &a1, &an, &n);
+    printf("%.2lf\n", soma_pa(a1, an, n));
+    return 0;
+}
